@@ -15,7 +15,14 @@ public class Jugador {
         }
     }
 
+
+    public void SuperRepartir() {
+        for (int i = 0; i < TOTAL_CARTAS; i++) {
+            cartas[i] = new Carta(r);
+        }
+    }
     public void UltraRepartir() {
+
         for (int i = 0; i < TOTAL_CARTAS; i++) {
             cartas[i] = new Carta(r);
         }
