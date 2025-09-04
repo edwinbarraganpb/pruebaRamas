@@ -15,6 +15,12 @@ public class Jugador {
         }
     }
 
+    public void UltraRepartir() {
+        for (int i = 0; i < TOTAL_CARTAS; i++) {
+            cartas[i] = new Carta(r);
+        }
+    }
+
     public void mostrar(JPanel pnl) {
         pnl.removeAll();
         int posicion = MARGEN + TOTAL_CARTAS * DISTANCIA;
